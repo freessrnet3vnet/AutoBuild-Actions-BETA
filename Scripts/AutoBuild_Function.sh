@@ -22,7 +22,7 @@ Firmware_Diy_Before() {
 		OP_VERSION_HEAD="R${OP_BRANCH}-"
 	fi
 	case "${OP_AUTHOR}/${OP_REPO}" in
-	coolsnowwolf/lede)
+	freessrnet3vnet/lede20230215)
 		Version_File=package/lean/default-settings/files/zzz-default-settings
 		zzz_Default_Version="$(egrep -o "R[0-9]+\.[0-9]+\.[0-9]+" ${Version_File})"
 		OP_VERSION="${zzz_Default_Version}-${Compile_Date}"
