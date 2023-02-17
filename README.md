@@ -1,3 +1,8 @@
+引用别的Lede代码的修改原coolsnowwolf/lede为第三方lede地址如：freessrnet3vnet/lede，有如下三个文件
+   1.   .github/workflows/AutoBuild-Actions-BETA/.github/workflows/AutoBuild-d-team_newifi-d2.yml
+   2.   Scripts/AutoBuild_DiyScript.sh
+   3.   Scripts/AutoBuild_Function.sh
+
 # OpenWrt-Actions & One-key AutoUpdate
 
 AutoBuild-Actions 稳定版仓库地址: [AutoBuild-Actions-Template](https://github.com/Hyy2001X/AutoBuild-Actions-Template)
