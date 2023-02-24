@@ -138,9 +138,9 @@ jobs:
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
         cd openwrt
         echo "start update..."
-        ./scripts/feeds update -a
+        # ./scripts/feeds update -a
         echo "start install..."
-        ./scripts/feeds install -a
+        # ./scripts/feeds install -a
 
     - name: Accelerate
       if: env.CACHE_ACCELERATE == 'true'
