@@ -132,11 +132,14 @@ jobs:
 
     - name: Clone Openwrt Source Code
       run: |
+        echo "start Clone..."
         git clone -b $REPO_BRANCH $REPO_URL openwrt
+        echo "Clone End..."
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
         cd openwrt
-        chmod u+x ./scripts/feeds
+        echo "start update..."
         ./scripts/feeds update -a
+        echo "start install..."
         ./scripts/feeds install -a
 
     - name: Accelerate
